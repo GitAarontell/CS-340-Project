@@ -4,16 +4,39 @@ import './trucks.css';
 function Trucks () {
     return(
         <div className='trucksContainer'>
+
             <form className='dForm' action="/">
-                <label htmlFor="dName">Name:</label>
-                <input type="text" id="dName" name="dName"/>
-                <label htmlFor="dEmail">Email:</label>
-                <input type="text"></input>
-                <label htmlFor="dLateDeliveries">LateDeliveries:</label>
-                <input type="number"></input>
-                <label htmlFor="dEarlyDeliveries">EarlyDeliveries:</label>
-                <input type="number"></input>
+
+                <label htmlFor="tCurrentFacilityID">Current Facility ID:</label>
+                <input
+                    type="text"
+                    id="tCurrentFacilityID"
+                    name="dtCurrentFacilityID">
+                </input>
+
+                <label htmlFor="tPlate">Plate Number:</label>
+                <input
+                    type="text"
+                    id="tPlate"
+                    name="dtPlate">
+                </input>
+
+                <label htmlFor="tMaxWeight">Max Weight:</label>
+                <input
+                    type="number"
+                    id="tMaxWeight"
+                    name="dtMaxWeight">
+                </input>
+
+                <label htmlFor="tMaxVolume">Max Volume:</label>
+                <input
+                    type="number"
+                    id="tMaxVolume"
+                    name="dtMaxVolume">
+                </input>
+
                 <input type="submit" value="Submit"></input>
+
             </form>
         </div>
     )

@@ -4,17 +4,41 @@ import './drivers.css';
 function Drivers () {
     return (
         <div className='driversContainer'>
+
             <form className='dForm' action="/">
+                
                 <label htmlFor="dName">Name:</label>
-                <input type="text" id="dName" name="dName"/>
+                <input
+                    type="text"
+                    id="dName"
+                    name="ddName">
+                </input>
+
                 <label htmlFor="dEmail">Email:</label>
-                <input type="text"></input>
-                <label htmlFor="dLateDeliveries">LateDeliveries:</label>
-                <input type="number"></input>
-                <label htmlFor="dEarlyDeliveries">EarlyDeliveries:</label>
-                <input type="number"></input>
+                <input
+                    type="text"
+                    id="dEmail"
+                    name="ddEmail">
+                </input>
+
+                <label htmlFor="dLateDeliveries">Late Deliveries:</label>
+                <input
+                    type="number"
+                    id="dLateDeliveries"
+                    name="ddLateDeliveries">
+                </input>
+
+                <label htmlFor="dEarlyDeliveries">Early Deliveries:</label>
+                <input
+                    type="number"
+                    id="dEarlyDeliveries"
+                    name="ddEarlyDeliveries">
+                </input>
+
                 <input type="submit" value="Submit"></input>
+
             </form>
+
         </div>
     );
 }

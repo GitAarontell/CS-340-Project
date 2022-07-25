@@ -4,17 +4,55 @@ import './orders.css';
 function Orders () {
     return(
         <div className='ordersContainer'>
+
             <form className='dForm' action="/">
-                <label htmlFor="dName">Name:</label>
-                <input type="text" id="dName" name="dName"/>
-                <label htmlFor="dEmail">Email:</label>
-                <input type="text"></input>
-                <label htmlFor="dLateDeliveries">LateDeliveries:</label>
-                <input type="number"></input>
-                <label htmlFor="dEarlyDeliveries">EarlyDeliveries:</label>
-                <input type="number"></input>
+
+                <label htmlFor="oCustomerID">Customer ID:</label>
+                <input
+                    type="number"
+                    id="oCustomerID"
+                    name="doCustomerID">
+                </input>
+
+                <label htmlFor="oStartingFacility">Starting Facility ID:</label>
+                <input
+                    type="text"
+                    id="oStartingFacility"
+                    name="doStartingFacility">
+                </input>
+
+                <label htmlFor="oEndingFacility">Ending Facility ID:</label>
+                <input
+                    type="text"
+                    id="oEndingFacility"
+                    name="doEndingFacility">
+                </input>
+
+                <label htmlFor="oCurrentFacility">Current Facility ID:</label>
+                <input
+                    type="text"
+                    id="oCurrentFacility"
+                    name="doCurrentFacility">
+                </input>
+
+                <label htmlFor="oVolume">Volume:</label>
+                <input
+                    type="number"
+                    id="oVolume"
+                    name="doVolume">
+                </input>
+
+                <label htmlFor="oWeight">Weight:</label>
+                <input
+                    type="number"
+                    id="oWeight"
+                    name="doWeight">
+                </input>
+
                 <input type="submit" value="Submit"></input>
+
             </form>
+
         </div>
     )
 }

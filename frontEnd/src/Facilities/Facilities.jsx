@@ -4,16 +4,33 @@ import './facilities.css';
 function Facilities () {
     return(
         <div className='facilitiesContainer'>
+
             <form className='dForm' action="/">
-                <label htmlFor="dFacilityID">FacilityID:</label>
-                <input type="number" id="dName" name="dName"/>
-                <label htmlFor="customerID">customerID:</label>
-                <input type="number"></input>
-                <label htmlFor="Location">Location":</label>
-                <input type="text"></input>
-                <label htmlFor="dName">Name:</label>
-                <input type="text"></input>
-                <input type="submit" value="Submit"></input>
+
+                <label htmlFor="dName">Facility Name:</label>
+                <input
+                    type="text">
+                </input>
+
+                <label htmlFor="fCustomerID">CustomerID:</label>
+                <input
+                    type="number"
+                    id="fCustomerID"
+                    name="dfCustomerID">   
+                </input>
+
+                <label htmlFor="fLocation">Location:</label>
+                <input
+                    type="text"
+                    id="fLocation"
+                    name="dfLocation">
+                </input>
+
+                <input
+                    type="submit"
+                    value="Submit">
+                </input>
+
             </form>
         </div>
     )
